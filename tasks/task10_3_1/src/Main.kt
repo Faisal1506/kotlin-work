@@ -2,8 +2,9 @@
 
 import kotlin.system.exitProcess
 
-fun display(text: String) {
-    println(text.uppercase())
+when(result){
+    null -> ("?")
+    else -> display(result)
 }
 
 fun main(args: Array<String>) {
