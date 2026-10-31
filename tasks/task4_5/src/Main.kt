@@ -3,5 +3,14 @@
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
-    // Add your code here
+    if (args.size != 1){
+        println("Error:1 value is needed")
+        exitProcess(1)
+    }
+
+    var a = args[0].toInt()
+
+    for (n in 1..a step 2){
+        println(n)
+    }
 }
